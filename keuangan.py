@@ -12,7 +12,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(key_dict, scope)
 client = gspread.authorize(creds)
 
 # URL dan worksheet
-sheet_url = "https://docs.google.com/spreadsheets/d/1gch3ROD7veg-FtBqgtRXtM93yd9tlLR4-oec8GNtZ_c/edit#gid=0"
+sheet_url = "https://docs.google.com/spreadsheets/d/1RfuDumcuhsa49qnqfJp4GYGXnWZq6PjcscNcCSfBY1Q/edit?gid=0#gid=0"
 sheet = client.open_by_url(sheet_url)
 worksheet = sheet.worksheet("Data")
 
